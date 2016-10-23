@@ -1,0 +1,24 @@
+{
+  "name": "nyssa",
+  "version": "1.0.0",
+  "description": "Application generator tool",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --verbose | snazzy"
+  },
+  "author": "",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "nyssa": "./src/index.js",
+    "nyssa-be": "./src/nyssa-be.js",
+    "nyssa-fe": "./src/nyssa-fe.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "snazzy": "^5.0.0",
+    "standard": "^8.4.0"
+  }
+}
