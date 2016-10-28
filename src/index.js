@@ -9,7 +9,7 @@ program
   .command('start <project-name>').alias('s')
   .description('Start a project in a new folder')
   .action(function (projectName) {
-    initFE(projectName, `fe/${projectName}`).catch(console.error)
+    initFE(projectName, `${projectName}/fe`).catch(console.error)
     // initBE(projectName, `be/${projectPath}`)
   })
 
