@@ -15,7 +15,9 @@
     "nyssa-fe": "./src/nyssa-fe.js"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "npm": "^3.10.9",
+    "yeoman-environment": "^1.6.5"
   },
   "devDependencies": {
     "snazzy": "^5.0.0",
