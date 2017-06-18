@@ -2,14 +2,8 @@
 const utils = require('../utils')
 const config = require('../config')
 
-module.exports = function (projectName, projectPath = '.') {
-  console.log(`\nGenerating back end for project ${projectName}...`)
+module.exports = function (projectPath = '.') {
+  console.log(`\nGenerating back end for project...`)
   let generator = config.generators.BE
-  return utils.installGenerator(generator).then(
-    () => utils.runGenerator(generator, {
-      'skip-install': true,
-      name: projectName,
-      path: projectPath
-    })
-  )
+  return utils.runGenerator(generator, {}, projectPath)
 }

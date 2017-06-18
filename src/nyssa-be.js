@@ -4,13 +4,15 @@ const program = require('commander')
 const init = require('./back-end/init')
 
 program
-  .command('start <project-name>').alias('s')
+  .command('init-folder <project-folder>')
+  .alias('if')
   .description('Start a project in a new folder')
-  .action(projectName => init(projectName, projectName).catch(console.error))
+  .action(projectFolder => init(projectFolder).catch(console.error))
 
 program
-  .command('init <project-name>').alias('i')
+  .command('init')
+  .alias('i')
   .description('Initialize a project in the current folder')
-  .action(projectName => init(projectName).catch(console.error))
+  .action(() => init().catch(console.error))
 
 program.parse(process.argv)

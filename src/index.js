@@ -7,22 +7,22 @@ const initBE = require('./back-end/init')
 program.version('0.0.1')
 
 program
-  .command('start <project-name>').alias('s')
+  .command('init-folder <project-folder>')
+  .alias('if')
   .description('Start a project in a new folder')
-  .action(function (projectName) {
-    initFE(projectName, `${projectName}/site`)
-      .then(() => initBE(projectName, `${projectName}/server`))
+  .action(projectFolder =>
+    initFE(projectFolder, `${projectFolder}/client`)
+      .then(() => initBE(`${projectFolder}/server`))
       .catch(console.error)
-  })
+  )
 
 program
-  .command('init <project-name>').alias('i')
+  .command('init')
+  .alias('i')
   .description('Initialize a project in the current folder')
-  .action(function (projectName) {
-    initFE(projectName, 'site')
-      .then(() => initBE(projectName, 'server'))
-      .catch(console.error)
-  })
+  .action(() =>
+    initFE('client').then(() => initBE('server')).catch(console.error)
+  )
 
 program
   .command('fe', 'Call a front-end command')

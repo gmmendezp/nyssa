@@ -10,15 +10,15 @@ npm install -g nyssa
 
 ### Commands
 
-- `nyssa start <project-name>`
-  To generate a project inside a folder called <project-name>. It will create the different inside their respective folders(`fe` or `be`).
-- `nyssa init <project-name>`
-  To generate a project in the current folder. It will create the different inside their respective folders(`fe` or `be`).
-- `nyssa fe start <project-name>` or `nyssa-fe start <project-name>`
-  To generate a FE project inside a folder called <project-name>. It will create just the FE project.
-- `nyssa fe init <project-name>` or `nyssa-fe init <project-name>`
-  To generate a FE project inside a folder called <project-name>. It will create just the FE project.
-- `nyssa be start <project-name>` or `nyssa-be start <project-name>`
-  To generate a BE project inside a folder called <project-name>. It will create just the BE project.
-- `nyssa be init <project-name>` or `nyssa-be init <project-name>`
-  To generate a BE project inside a folder called <project-name>. It will create just the BE project.
+- `nyssa init`
+  To generate projects in the current folder. It will create the different projects inside their respective folders(`client` or `server`).
+- `nyssa init-folder <project-folder>`
+  To generate projects inside a folder called `<project-folder>`. It will create the different projects inside their respective folders(`client` or `server`).
+- `nyssa fe init` or `nyssa-fe init`
+  To generate a FE project inside the current folder.
+- `nyssa fe init-folder <project-folder>` or `nyssa-fe init-folder <project-folder>`
+  To generate a FE project inside a folder called <project-folder>.
+- `nyssa be init` or `nyssa-be init`
+  To generate a BE project inside the current folder.
+- `nyssa be init-folder <project-folder>` or `nyssa-be init-folder <project-folder>`
+  To generate a BE project inside a folder called <project-folder>.
