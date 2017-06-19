@@ -10,6 +10,11 @@
   },
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/gmmendezp/nyssa.git"
+  },
+  "homepage": "https://gitlab.com/gmmendezp/nyssa#README",
   "preferGlobal": true,
   "bin": {
     "nyssa": "./src/index.js",
