@@ -27,7 +27,7 @@ npm install -g nyssa
   To call a sub-generator for type. The possible types are:
   - `action`: generate a new redux action
   - `component`: generate a new react/redux component
-  - `epic`: create a new react-observable epic
+  - `epic`: create a new redux-observable epic
   - `reducer`: create a new redux reducer
 
 ## BE Commands
