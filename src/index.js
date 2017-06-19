@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 'use strict'
 const program = require('commander')
-const initFE = require('./front-end/init')
-const initBE = require('./back-end/init')
+const utils = require('./utils')
 
-program.version('0.0.1')
+program.version('1.0.0')
 
 program
   .command('init-folder <project-folder>')
   .alias('if')
   .description('Start a project in a new folder')
   .action(projectFolder =>
-    initFE(projectFolder, `${projectFolder}/client`)
-      .then(() => initBE(`${projectFolder}/server`))
+    utils
+      .init('FE', projectFolder, `${projectFolder}/client`)
+      .then(() => utils.init('BE', `${projectFolder}/server`))
       .catch(console.error)
   )
 
@@ -21,7 +21,10 @@ program
   .alias('i')
   .description('Initialize a project in the current folder')
   .action(() =>
-    initFE('client').then(() => initBE('server')).catch(console.error)
+    utils
+      .init('FE', 'client')
+      .then(() => utils.init('BE', 'server'))
+      .catch(console.error)
   )
 
 program

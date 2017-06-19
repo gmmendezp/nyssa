@@ -30,8 +30,8 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "generator-nyssa-be": "0.0.4",
-    "generator-nyssa-fe": "0.0.6",
+    "generator-nyssa-be": "0.0.5",
+    "generator-nyssa-fe": "0.0.7",
     "yeoman-environment": "^2.0.0"
   },
   "devDependencies": {
