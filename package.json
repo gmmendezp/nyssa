@@ -29,15 +29,15 @@
     ]
   },
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "^2.11.0",
     "generator-nyssa-be": "^1.0.1",
-    "generator-nyssa-fe": "^1.0.1",
+    "generator-nyssa-fe": "^1.0.2",
     "yeoman-environment": "^2.0.0"
   },
   "devDependencies": {
     "husky": "^0.13.4",
     "lint-staged": "^4.0.0",
-    "prettier": "^1.4.4",
+    "prettier": "^1.5.2",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   }
