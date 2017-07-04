@@ -1,6 +1,6 @@
 {
   "name": "nyssa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Application generator tool",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,7 +31,7 @@
   "dependencies": {
     "commander": "^2.11.0",
     "generator-nyssa-be": "^1.0.1",
-    "generator-nyssa-fe": "^1.0.1",
+    "generator-nyssa-fe": "^1.0.5",
     "yeoman-environment": "^2.0.0"
   },
   "devDependencies": {

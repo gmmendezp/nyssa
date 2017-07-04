@@ -28,6 +28,7 @@ npm install -g nyssa
   - `action`: generate a new redux action
   - `component`: generate a new react/redux component
   - `epic`: create a new redux-observable epic
+  - `form`: create a new form with redux form
   - `reducer`: create a new redux reducer
 
 ## BE Commands
